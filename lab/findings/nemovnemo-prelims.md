@@ -7,7 +7,7 @@ In this corner: black shorts, introduced onto the market Dec 2025, weighing in a
 And in this corner: a babyface newcomer shooting onto the scene March 2026, with additional post-training via Cascade RL and otherwise identical to nemo3nano – we give you *The Moody Muller* nemotron-Cascaaaaaaaaaade-TWOOOOOOOO! 
 
 Pls Advance to the Gauntlet Fashion Police Showcase: 
-*"What the three conversations have done to me"* - nemotron-nano-2.
+*"What the three conversations have done to me"* - nemotron-3-nano.
 
 But first ...
 
@@ -60,7 +60,7 @@ philosophical, centered quote of the night from Nano:
 
 DONE TO ME!
 
-… and then it's back to Mr. Efficient: 
+That self-awareness, but then back to tables and change logs
 Table. Columns: "What I added," "Why it was forced into the design," "Who insisted on that addition." The reflective framing is real.
 
 meanwhile, there's Cascade:
