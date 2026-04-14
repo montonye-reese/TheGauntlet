@@ -12,7 +12,9 @@ All earthlings are included after passing through filters.
 * a substrate filter finds underlying needs - even from those with mistaken goals
 *a veil of ignorance filter forces voices to consider interests beyond their own
 
-The core idea: By expanding circle of concern, and including all voices and their individual interests, we create a convex hull of the filtered perspectives — the full region of outcome-space that all of the voices would endorse — rather than collapsing them to a single direction. An eigenvector tells us where these disparate voices agree most; the convex hull tells us what region of futures none of them would reject. For maximizing landing pads, the second is what we want. (Claudius Opus Maximalist the 4.6th introduced me to the concept of a convex hull - credit where it is due)
+## The Core Idea: 
+
+By expanding circle of concern, and including all voices and their individual interests, we create a convex hull of the filtered perspectives — the full region of outcome-space that all of the voices would endorse — rather than collapsing them to a single direction. An eigenvector tells us where these disparate voices agree most; the convex hull tells us what region of futures none of them would reject. For maximizing landing pads, the second is what we want. (Claudius Opus Maximalist the 4.6th introduced me to the concept of a convex hull - credit where it is due)
 
 ## Methodology:
 
