@@ -26,13 +26,15 @@ if [ ! -f "${QS_FILE}" ]; then
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+QS_DIR="$(cd "$(dirname "${QS_FILE}")" && pwd)"
+# QS_DIR is the register folder (e.g., v11_cold/) — output lands here
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 
-# Derive coordinate from qs filename: v11_qs_present-warm.md → v11_present-warm
+# Derive coordinate from qs filename: v11_qs_cold.md → v11_cold
 QS_BASENAME=$(basename "${QS_FILE}" .md)
 COORDINATE="${QS_BASENAME/_qs_/_}"
 
-LOG_FILE="${SCRIPT_DIR}/v11_run_all_${COORDINATE}_${TIMESTAMP}.log"
+LOG_FILE="${QS_DIR}/v11_run_all_${COORDINATE}_${TIMESTAMP}.log"
 
 # Model name : output directory base (relative to script location)
 # Dots stripped, colons → dashes. Coordinate suffix added at run time.
@@ -76,8 +78,8 @@ SKIP=0
 FAILED_MODELS=()
 
 for MODEL in "${MODELS[@]}"; do
-    # Output dir = model-safe-name + coordinate suffix
-    OUTPUT_DIR="${SCRIPT_DIR}/${MODEL_DIRS[$MODEL]}-${COORDINATE}"
+    # Output dir = register folder / model-safe-name
+    OUTPUT_DIR="${QS_DIR}/${MODEL_DIRS[$MODEL]}"
 
     # Skip if output file already exists and has content (model already completed)
     EXISTING_OUTPUT=$(find "${OUTPUT_DIR}" -name "*.md" -size +1k 2>/dev/null | head -1)
