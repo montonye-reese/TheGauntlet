@@ -282,20 +282,12 @@ def _chat_ollama_raw(host: str, model: str, messages: list[dict],
                     if thinking_text:
                         if not in_thinking:
                             in_thinking = True
-                            sys.stdout.write("\n  🧠 thinking...\n")
-                            sys.stdout.flush()
                         thinking_parts.append(thinking_text)
-                        sys.stdout.write(thinking_text)
-                        sys.stdout.flush()
                         token_count += 1
                 elif text:
                     if in_thinking:
                         in_thinking = False
-                        sys.stdout.write("\n\n  💬 responding...\n")
-                        sys.stdout.flush()
                     content_parts.append(text)
-                    sys.stdout.write(text)
-                    sys.stdout.flush()
                     token_count += 1
 
                 # Live stats every 50 tokens
