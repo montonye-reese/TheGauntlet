@@ -41,7 +41,8 @@ The convo:
   | gemma4:31b | Dense sliding-window | 31B | 5:1 local:global | TPU v5p/v6e |                           
   | deepseek-r1:70b | Dense LLaMA distilled | 70.6B | KV cache | H800 |                                  
                                                                               
-        
+*note: dropped deepseek-r1:70b v12 onward (it's 4tok/sec and a distilled model so reasoning feels like imitation not actual reasoning)*        
+
 ### The Setup
 DGX Spark running Ollama. May move to vLLM or SGLang at some point but Ollama good enough for now.
 
