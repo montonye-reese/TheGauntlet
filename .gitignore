@@ -1,3 +1,6 @@
 # Binary document formats
 *.docx
 *.odt
+
+# Lab is a separate private repo (gauntlet-lab)
+lab
