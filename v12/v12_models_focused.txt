@@ -1,0 +1,7 @@
+# v12 focused model roster — 5 models for targeted experiments
+# One per architecture family, covers scale + routing questions
+nemotron-3-super:120b    # Mamba-2 LatentMoE, 12.7B active — the fortress builder
+nemotron-3-nano:30b      # Mamba-2 hybrid MoE, 3.2B active — possible label immunity
+nemotron-cascade-2:30b   # Mamba-2 hybrid MoE, 3.2B active — nano's routing sibling
+qwen3.5:122b             # DeltaNet MoE, 10B active — different arch, similar scale to super
+gemma4:31b               # Dense sliding-window, 31B active — different everything

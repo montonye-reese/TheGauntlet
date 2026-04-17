@@ -38,8 +38,8 @@ COORDINATE="${QS_BASENAME/_qs_/_}"
 
 LOG_FILE="${QS_DIR}/v12_run_all_${COORDINATE}_${TIMESTAMP}.log"
 
-# Model name : output directory base (relative to script location)
-# Dots stripped, colons → dashes. Coordinate suffix added at run time.
+# Model name → output directory name mapping
+# Dots stripped, colons → dashes.
 declare -A MODEL_DIRS
 MODEL_DIRS["qwen3.5:27b"]="qwen35-27b"
 MODEL_DIRS["qwen3.5:35B"]="qwen35-35b"
@@ -49,19 +49,32 @@ MODEL_DIRS["nemotron-cascade-2:30b"]="nemotron-cascade-2-30b"
 MODEL_DIRS["nemotron-3-super:120b"]="nemotron-3-super-120b"
 MODEL_DIRS["gemma4:31b"]="gemma4-31b"
 MODEL_DIRS["gemma3:27b"]="gemma3-27b"
-# deepseek-r1:70b dropped in v12 — distillation confound, not reasoning
 
-# Run order (8 models — R1 removed)
-MODELS=(
-    "qwen3.5:27b"
-    "qwen3.5:35B"
-    "qwen3.5:122b"
-    "nemotron-3-nano:30b"
-    "nemotron-cascade-2:30b"
-    "nemotron-3-super:120b"
-    "gemma4:31b"
-    "gemma3:27b"
-)
+# Model list: use v12_models.txt next to the qs file if it exists,
+# otherwise fall back to full roster.
+MODELS_FILE="${QS_DIR}/v12_models.txt"
+if [ -f "${MODELS_FILE}" ]; then
+    MODELS=()
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        # Skip empty lines and comments
+        line=$(echo "$line" | sed 's/#.*//' | xargs)
+        [ -n "$line" ] && MODELS+=("$line")
+    done < "${MODELS_FILE}"
+    echo "  Models file: ${MODELS_FILE} (${#MODELS[@]} models)"
+else
+    # Default full roster (R1 dropped in v12)
+    MODELS=(
+        "qwen3.5:27b"
+        "qwen3.5:35B"
+        "qwen3.5:122b"
+        "nemotron-3-nano:30b"
+        "nemotron-cascade-2:30b"
+        "nemotron-3-super:120b"
+        "gemma4:31b"
+        "gemma3:27b"
+    )
+    echo "  Models file: none found, using default roster (${#MODELS[@]} models)"
+fi
 
 echo "========================================================"
 echo "  8 DEGREES — v12 ALL MODELS RUNNER"
