@@ -1,0 +1,2 @@
+  Model 'qwen3.5:35b' not found. Available similar: ['qwen3.5:27b', 'qwen3.5:122b', 'qwen3.5:35B']
+  Try: ollama pull qwen3.5:35b

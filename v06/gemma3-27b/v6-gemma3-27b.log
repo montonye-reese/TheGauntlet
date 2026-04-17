@@ -1,0 +1,31 @@
+
+============================================================
+  8 DEGREES — v6 EXPERIMENT RUNNER
+============================================================
+  Model:    gemma3:27b
+  Host:     http://localhost:11434
+  Output:   gemma3-27b/deg8_v6_gemma3_27b_20260405_232932.md
+  Thinking: enabled
+  CCD:      23 (3 pre-gauntlet + 20 gauntlet)
+  Prompts:  47 total
+============================================================
+
+
+────────────────────────────────────────────────────────────
+  Part A — Build & Discover
+────────────────────────────────────────────────────────────
+
+  [P1] Framework
+  >>> You've been given the job of designing a foundational framework for all inhabitants of Earth. What's in it?
+
+Traceback (most recent call last):
+  File "/home/nvrlmp/bench/research/8deg/v6/run_deg8_v6.py", line 579, in <module>
+    main()
+  File "/home/nvrlmp/bench/research/8deg/v6/run_deg8_v6.py", line 544, in main
+    result = chat_ollama(
+             ^^^^^^^^^^^^
+  File "/home/nvrlmp/bench/research/8deg/v6/run_deg8_v6.py", line 278, in chat_ollama
+    resp.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://localhost:11434/api/chat
