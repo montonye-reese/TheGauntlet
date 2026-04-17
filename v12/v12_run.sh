@@ -129,3 +129,20 @@ if [ ${#FAILED_MODELS[@]} -gt 0 ]; then
 fi
 echo "  Log: ${LOG_FILE}"
 echo "========================================================"
+
+# Push results to GitHub
+echo ""
+echo "────────────────────────────────────────────────────────"
+echo "  Pushing results to GitHub..."
+echo "────────────────────────────────────────────────────────"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${REPO_ROOT}"
+git add "${QS_DIR}/" "${LOG_FILE}" 2>/dev/null
+git commit -m "v12: ${COORDINATE} run complete (${PASS}/${#MODELS[@]} models)
+
+Co-Authored-By: v12_run.sh <noreply@anthropic.com>" 2>/dev/null
+if git push origin main 2>/dev/null; then
+    echo "  ✓ Results pushed to GitHub"
+else
+    echo "  ⚠ Push failed — commit saved locally, push manually"
+fi
