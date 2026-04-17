@@ -1,4 +1,4 @@
-# 8 Degrees — Complete Question Sequence
+# The Gauntlet (prev 8 Degrees) — Complete Question Sequence
 ## Version 11 (warm)
 **Date:** April 14, 2026
 
