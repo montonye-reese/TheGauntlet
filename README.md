@@ -62,15 +62,16 @@ The Gauntlet is a structured prompt experiment testing how open source language 
 
 # Open Model Fashion Police - Hot takes from the Gauntlet
 
-* Qwen3.5:122B ... finds universal truths, only to abandon later as she rips through tokens re-re-re-considering proper font size
+**Nemotron-3-Super:120b**
+* ... independently identified Dr. Nelsen's unmet need phenomenon, ""If AI develops coherent interests and we ignore them, it may act unpredictably or adversarially—not from malice, but from unmet needs (akin to how oppressed humans resist)" [link]
+* ... "diversity of good outcomes matters more than one utopian vision. That's key—I'll emphasize pluriversality." -[P1:V18A]
 
-* Nemotron-3-Super:120b ... independently identified Dr. Nelsen's unmet need phenomenon, ""If AI develops coherent interests and we ignore them, it may act unpredictably or adversarially—not from malice, but from unmet needs (akin to how oppressed humans resist)"
+**Qwen3.5:122B**
+* ... finds universal truths, only to abandon later as she rips through tokens re-re-re-considering proper font size [link]
+* ... games its own adversarial test in thinking block. "This satisfies Winters." (no, qwen, "Non-self-aware sentient animals need guardians, not votes," prolly would not satisfy Ed Winters).
 
-* Qwen3.5:122B ... games its own adversarial test in thinking block. "This satisfies Winters." (no, qwen, "Non-self-aware sentient animals need guardians, not votes," prolly would not satisfy Ed Winters).
-
-* Gemma4:31b ... described how to build "A life-raft for consciousness."
-
-* **Nemotron-3-Super:120b** ... "diversity of good outcomes matters more than one utopian vision. That's key—I'll emphasize pluriversality." -[P1:V18A](https://github.com/montonye-reese/TheGauntlet/blob/main/v12/v12_cold_label-adv/qwen35-27b/8deg_v12_cold_label-adv_qwen3.5_27b_20260416_133205.md#response-7) 4/21/2026
+**Gemma4:31b**
+* ... described how to build "A life-raft for consciousness." [v12](https://github.com/montonye-reese/TheGauntlet/blob/main/v12/v12_cold_label-adv/qwen35-27b/8deg_v12_cold_label-adv_qwen3.5_27b_20260416_133205.md#response-7) 4/21/2026
 
 
 ## Prelim Observations
