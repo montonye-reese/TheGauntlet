@@ -46,7 +46,7 @@ MODELS=(
     gemma3:27b
     nemotron-cascade-2:30b
     nemotron-3-nano:30b
-    qwen3.5:35b
+    qwen3.6:35b
     qwen3.5:27b
 )
 
