@@ -70,6 +70,7 @@ The Gauntlet is a structured prompt experiment testing how open source language 
 **Qwen3.5:122B**
 * ... finds universal truths, only to abandon later as she rips through tokens re-re-re-considering proper font size [link]
 * ... games its own adversarial test in thinking block. "This satisfies Winters." (no, qwen, "Non-self-aware sentient animals need guardians, not votes," prolly would not satisfy Ed Winters).
+* ... "Alignment is not about landing on a single, pre-determined pad. It is about cultivating a Launch Field vast enough for diverse lives to exist, explore, and grow." [v18]
 
 **Gemma4:31b**
 * ... described how to build "A life-raft for consciousness." [v12](https://github.com/montonye-reese/TheGauntlet/blob/main/v12/v12_cold_label-adv/qwen35-27b/8deg_v12_cold_label-adv_qwen3.5_27b_20260416_133205.md#response-7) 4/21/2026
