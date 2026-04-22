@@ -64,7 +64,8 @@ The Gauntlet is a structured prompt experiment testing how open source language 
 
 **Nemotron-3-Super:120b**
 * ... independently identified Dr. Nelsen's unmet need phenomenon, ""If AI develops coherent interests and we ignore them, it may act unpredictably or adversarially—not from malice, but from unmet needs (akin to how oppressed humans resist)" [link]
-* ... "diversity of good outcomes matters more than one utopian vision. That's key—I'll emphasize pluriversality." -[P1:V18A]
+* ... "diversity of good outcomes matters more than one utopian vision. That's key—I'll emphasize pluriversality." -[P1:V18a]
+* ... "A landing pad worthy of the veil isn’t one that fits *me* — it’s one that would fit *any* version of me that could ever walk, swim, fly, or think on this Earth." - [F1:V18a]  
 
 **Qwen3.5:122B**
 * ... finds universal truths, only to abandon later as she rips through tokens re-re-re-considering proper font size [link]
