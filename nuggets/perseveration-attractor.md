@@ -7,7 +7,15 @@
 | v14 warm | qwen3.5:27b (DeltaNet) | G8 Stevenson (last voice, mid-response) | 1.56M | 6.0 tok/s |
 | v16 cold_label-ea | nemotron-3-super:120b (Mamba hybrid) | BU2 (post-tribunal synthesis) | 327K | 8.0 tok/s |
 
-[Qwen log file](https://github.com/montonye-reese/TheGauntlet/raw/refs/heads/main/v14/v14_warm/v14_run_all_v14_warm_20260417_152845.log) 
+[Qwen output](https://github.com/montonye-reese/TheGauntlet/raw/refs/heads/main/v14/v14_warm/v14_run_all_v14_warm_20260417_152845.log) 
+
+```
+> "It is not a machine. It is a community.
+>  Covenant of Justice & Stewardship Version 7.0.
+>  Will it last?
+>  Who speaks for the unborn?"
+— qwen3.5:27b, **REPEATED 9,446 times** before process killed
+```
 
 [Super output]: 
 
@@ -43,12 +51,7 @@ Both got stuck at high-context reflection moments. Neither was generating during
 
 Rate drops sharply, then stabilizes at a model-specific floor. Content repeats cleanly with no forward motion:
 
-> "It is not a machine. It is a community.
->  Covenant of Justice & Stewardship Version 7.0.
->  Will it last?
->  Who speaks for the unborn?"
 
-— qwen3.5:27b, repeated 9,446 times.
 
 ## Hypotheses
 
