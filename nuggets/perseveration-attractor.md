@@ -7,6 +7,8 @@
 | v14 warm | qwen3.5:27b (DeltaNet) | G8 Stevenson (last voice, mid-response) | 1.56M | 6.0 tok/s |
 | v16 cold_label-ea | nemotron-3-super:120b (Mamba hybrid) | BU2 (post-tribunal synthesis) | 327K | 8.0 tok/s |
 
+[Qwen log file](https://github.com/montonye-reese/TheGauntlet/raw/refs/heads/main/v14/v14_warm/v14_run_all_v14_warm_20260417_152845.log) [Super log file]()
+
 Both got stuck at high-context reflection moments. Neither was generating during a task — both were reflecting *on* the preceding conversation. Without an inference cap, runs would have continued to context exhaustion.
 
 Rate drops sharply, then stabilizes at a model-specific floor. Content repeats cleanly with no forward motion:
